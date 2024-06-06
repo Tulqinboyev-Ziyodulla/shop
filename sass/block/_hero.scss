@@ -1,0 +1,43 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    &__text {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .hero__img {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    &__photo {
+        text-align: center;
+        margin: auto;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 1230px) {
+    .hero {
+
+        .hero__text {
+            display: none;
+        }
+
+        .hero__title {
+            display: none;
+        }
+    }
+}
